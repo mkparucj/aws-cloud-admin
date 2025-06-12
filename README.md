@@ -1,4 +1,4 @@
-# AWS Cloud Administrator Study Lab (Simulated)
+# AWS Cloud Administrator Portfolio Lab (Simulated)
 
 This project simulates hands-on AWS Cloud Administrator labs using WSL, Linux, and local scripting — to mirror a real AWS environment without needing access to the cloud (yet).
 
