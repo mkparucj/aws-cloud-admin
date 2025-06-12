@@ -1,0 +1,3 @@
+iam_jones   →  s3_readonly group → s3-readonly-policy.json
+iam_dev    →  ec2_ops group     → ec2-start-stop-policy.json
+iam_admin  →  admin_access group → full-admin-policy.json
