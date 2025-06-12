@@ -1,22 +1,15 @@
-# Week 1 – Day 4: IAM Users via Script (Simulated)
+# AWS Cloud Administrator Study Lab (Simulated)
 
-## 🔧 What This Does
-Simulates bulk creation of AWS IAM users and attaching them to policy groups using a bash script.
+This project simulates hands-on AWS Cloud Administrator labs using WSL, Linux, and local scripting — to mirror a real AWS environment without needing access to the cloud (yet).
 
-## 🧪 Script Details
-- `create_users.sh`: Reads user-group mapping and:
-  - Creates Linux users (e.g. `iam_john`)
-  - Creates groups simulating IAM roles (e.g. `s3_readonly`)
-  - Assigns each user to a group
+## 📅 Weekly Breakdown
 
-## ✅ Example Output
-- `iam_jones` → `s3_readonly`
-- `iam_dev` → `ec2_ops`
-- `iam_admin` → `admin_access`
+- **Week 1: IAM & Cloud Fundamentals**  
+  Focus on IAM concepts, policy simulation, user/role creation using Bash & Linux
 
-## 🔐 Simulated IAM Mapping
-Using Linux groups as policy roles and `usermod` to assign users, similar to AWS `AttachUserPolicy`.
+- **Week 2: EC2 & Storage**
+  Will simulate EC2 provisioning, SSH key pairs, and S3 structure locally
 
-## 📁 Files Included
-- `create_users.sh`
-- `README.md`
+## 📁 Repo Structure
+
+Each week is organized into its own folder with scripts, JSON files, and documentation.
