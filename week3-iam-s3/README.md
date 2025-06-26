@@ -6,7 +6,7 @@ This lab focused on setting up a user, group, and attaching an inline policy for
 
 ---
 
-# Environment Setup
+## Environment Setup
 
 To avoid pip SSL issues with `awscli-local`, I created a simple alias to simulate it:
 
@@ -14,26 +14,26 @@ To avoid pip SSL issues with `awscli-local`, I created a simple alias to simulat
 alias awslocal='aws --endpoint-url=http://localhost:4566'
 
 
-# Created a Group
+## Created a Group
 
 awslocal iam create-group --group-name devgroup
 
 
-# Created a User
+## Created a User
 
 awslocal iam create-user --user-name dev1
 
 
-# Added the User to the Group
+## Added the User to the Group
 
 awslocal iam add-user-to-group \
   --user-name dev1 \
   --group-name devgroup
 
 
-# Created an Inline Policy
-<Filename: dev-policy.json>
-<Location: ~/aws-cloud-admin/week3-iam-s3/dev-policy.json>
+## Created an Inline Policy
+Filename: dev-policy.json
+Location: ~/aws-cloud-admin/week3-iam-s3/dev-policy.json
 
 {
   "Version": "2012-10-17",
@@ -47,7 +47,7 @@ awslocal iam add-user-to-group \
 }
 
 
-# Attached an Inline Policy to the Group
+## Attached an Inline Policy to the Group
 
 awslocal iam put-group-policy \
   --group-name devgroup \
@@ -55,7 +55,7 @@ awslocal iam put-group-policy \
   --policy-document file://dev-policy.json
 
 
-# Verified attached Inline policy to the Group
+## Verified attached Inline policy to the Group
 
 awslocal iam list-group-policies --group-name devgroup
 
@@ -68,7 +68,7 @@ awslocal iam list-group-policies --group-name devgroup
 }
 
 
-# Key Learnings
+## Key Learnings
 
 IAM is used to securely manage identities and access to AWS services.
 
@@ -81,7 +81,7 @@ Inline policies are custom permission documents directly attached to a user or g
 LocalStack enables complete AWS simulation without real cloud costs.
 
 
-# Security Best Practices
+## Security Best Practices
 
 Always follow the principle of least privilege — only grant the permissions that are necessary.
 
@@ -90,9 +90,9 @@ Use groups to manage access consistently across multiple users.
 Avoid using "Action": ["*"] and "Resource": ["*"] in production policies unless absolutely required.
 
 
-# Outcome
+## Outcome
 
-Created and configured:
+# Created and configured:
 
 An IAM group (devgroup)
 
