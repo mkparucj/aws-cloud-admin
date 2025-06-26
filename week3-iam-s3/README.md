@@ -89,7 +89,7 @@ Always follow the principle of least privilege — only grant the permissions th
 
 Use groups to manage access consistently across multiple users.
 
-Avoid "Action": ["**"] and "Resource": ["**"] in production policies unless absolutely required.
+Avoid "Action": "*" and "Resource": "*" in production policies unless absolutely required.
 
 ## Outcome
 
@@ -128,10 +128,8 @@ awslocal s3 cp test.txt s3://dev-bucket/
 
 ````bash
 awslocal s3 ls s3://dev-bucket
-````
 
-# Output
+### Output
 
-````bash
 2025:06:26  19:06:51    56 test.txt
 ````
