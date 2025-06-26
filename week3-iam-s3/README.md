@@ -89,7 +89,7 @@ Always follow the principle of least privilege — only grant the permissions th
 
 Use groups to manage access consistently across multiple users.
 
-Avoid "Action": "*" and "Resource": "*" in production policies unless absolutely required.
+Avoid "Action": " * " and "Resource": " * " in production policies unless absolutely required.
 
 ## Outcome
 
