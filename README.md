@@ -46,7 +46,7 @@ Each week focused on real-world AWS tasks — IAM, VPC networking, EC2 & S3 oper
 
 ---
 
-## 🧰 Tools & Environment
+## Tools & Environment
 
 - **LocalStack** – Fully local AWS simulation (zero cost)
 - **AWS CLI** – Command-line scripting for AWS services
@@ -56,7 +56,7 @@ Each week focused on real-world AWS tasks — IAM, VPC networking, EC2 & S3 oper
 - **Docker Desktop** - Container
 ---
 
-## 📌 About This Project
+## About This Project
 
 This portfolio demonstrates my ability to:
 - Understand and work with key AWS services
@@ -67,11 +67,11 @@ This portfolio demonstrates my ability to:
 
 ---
 
-## 🔗 Contact
+## Contact
 
-**Chijioke Mkparu**  
-🌐 [LinkedIn Profile](https://www.linkedin.com/in/mkparucj)  
-📁 [GitHub Repo](https://github.com/mkparucj/aws-cloud-admin)
+**Chijioke Mkparu** 
+[LinkedIn Profile](https://www.linkedin.com/in/mkparucj)  
+[GitHub Repo](https://github.com/mkparucj/aws-cloud-admin)
 
 ---
 
